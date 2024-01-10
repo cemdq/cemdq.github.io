@@ -16,18 +16,15 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="antialiased flex justify-center items-center min-h-screen text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-900">
+	<body class="antialiased bg-neutral-100 flex justify-center items-center min-h-screen text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-900">
 		<slot />
 	</body>
 </html>
 <style is:global>
 	.intro {
-		background-image: url("../../public/me.png");
+		background-image: url("/me.png");
 		background-size:contain;
 		background-repeat: no-repeat;
 		background-position: right;
-	}
-	p, li {
-		color: #E5E7EB;
 	}
 </style>

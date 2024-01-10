@@ -5,9 +5,9 @@ import Button from '../components/Button.astro'
 ---
 
 <Layout title="Carlos Queiroz">
-	<main class="container mx-auto p-9 max-w-screen-lg">
-		<div class="grid lg:grid-cols-3 lg:grid-rows-5 md:grid-cols-2 md:grid-rows-4 sm:grid-cols-1 sm:grid-rows-5 gap-5">
-			<Card size="lg:col-span-2 lg:row-span-3	md:col-span-2 intro flex flex-col justify-between">
+	<main class="container mx-auto p-6 max-w-screen-lg">
+		<div class="grid lg:grid-cols-3 lg:grid-rows-5 md:grid-cols-1 gap-5">
+			<Card size="lg:col-span-2 lg:row-span-3	intro flex flex-col justify-between">
 				<div>
 					<span>WELCOME</span>
 					<p class="mt-3">I'm a software developer from Brazil.</p>	
@@ -15,12 +15,12 @@ import Button from '../components/Button.astro'
 				</div>
 				<div class="mt-6">
 					<Button 
-						text="Linkdin"
+						text="Linkedin"
 						adress="https://www.linkedin.com/in/cemdq/"
 					/>
 				</div>
 			</Card>
-			<Card size="lg:row-span-5 lg:col-start-3 md:col-span-2 md:row-start-2">
+			<Card size="lg:row-span-5 lg:col-start-3">
 				<span>ABOUT</span>
 				<p class="mt-3">My primary tools of choice includes:</p>
 				<ul class="list-disc mx-8 my-3">
@@ -44,7 +44,7 @@ import Button from '../components/Button.astro'
 					</a>
 				</p>
 			</Card>
-			<Card size="lg:row-span-2 lg:row-start-4 md:row-span-2 md:row-start-3">
+			<Card size="lg:row-span-2 lg:row-start-4">
 				<h2>FEATURED</h2>
 				<p class="mt-3 mb-6">
 					A Classic Memory Game
@@ -60,7 +60,7 @@ import Button from '../components/Button.astro'
 					/>
 				</div>
 			</Card>
-			<Card size="lg:row-start-4 md:row-start-3">
+			<Card size="lg:row-start-4 ">
 				<div class="flex items-center justify-between">
 					<p>See More</p>
 					<a href="https://github.com/cemdq" target="_blank">
@@ -68,7 +68,7 @@ import Button from '../components/Button.astro'
 					</a>
 				</div>
 			</Card>
-			<Card size="lg:col-start-2 lg:row-start-5 md:col-start-2 md:row-start-4">
+			<Card size="lg:col-start-2 lg:row-start-5">
 				<p>This page was made with <a href="https://astro.build/" target="_blank">Astro</a></p>
 			</Card>
 		</div>
