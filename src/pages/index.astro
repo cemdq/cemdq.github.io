@@ -51,23 +51,24 @@ import Button from '../components/Button.astro'
 				</p>
 				<div>
 					<Button 
-						text="Demo"
-						adress="https://cemdq.github.io/memory-game/"
-					/>
-					<Button 
 						text="Source"
 						adress="https://github.com/cemdq/memory-game"
 					/>
+					<Button 
+						text="Demo"
+						adress="https://cemdq.github.io/memory-game/"
+					/>
 				</div>
 			</Card>
-			<Card size="lg:row-start-4 ">
-				<div class="flex items-center justify-between">
-					<p>See More</p>
-					<a href="https://github.com/cemdq" target="_blank">
-						<img src="/arrow_outward.svg" alt="New Tab">
-					</a>
-				</div>
-			</Card>
+			<a href="https://github.com/cemdq" style="text-decoration: none;" target="_blank">
+				<Card size="lg:row-start-4  dark:hover:bg-gray-700">
+					<div class="flex justify-between">
+						See more
+						<img src="/arrow_outward.svg" alt="New Tab" class="duration-300">
+					</div>
+				</Card>
+			</a>
+				
 			<Card size="lg:col-start-2 lg:row-start-5">
 				<p>This page was made with <a href="https://astro.build/" target="_blank">Astro</a></p>
 			</Card>
@@ -82,5 +83,9 @@ import Button from '../components/Button.astro'
 	}
 	a:hover {
 		text-decoration: none;
+}
+	a:hover img {
+		margin-top: -5px;
+		margin-right: -5px;
 	}
 </style>
